@@ -4,7 +4,8 @@ an expressive material 3 game overlay ui framework. tailwind css, vanilla html, 
 built for injected overlays and standalone game ui. standard two-panel layout, dynamic theming, and decent fluid animations.
 
 ---
-
+![preview](github/demo/gameud.png)
+---
 ## concept features
 
 - material 3 expressive design language (m3 dark)

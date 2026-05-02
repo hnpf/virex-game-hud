@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>i just made some good shit!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/google-sans-flex/index.css">
+  <link rel="stylesheet" href="hud.css" />
+</head>
+<body class="vx-body">
+
+  <!-- root overlay container -->
+  <div class="vx-root" id="vx-root">
+
+    <!-- sidebar -->
+    <aside class="vx-sidebar" id="vx-sidebar">
+
+      <div class="vx-sidebar-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>
+        <span>pages</span>
+      </div>
+
+      <nav class="vx-nav" id="vx-nav">
+        
+      </nav>
+      
+
+      <div class="vx-info" id="vx-info">
+        <span class="vx-info-label">info placeholder</span>
+        <span class="vx-info-sub">vertext</span>
+      </div>
+
+    </aside>
+
+    <!-- content panel -->
+    <main class="vx-panel" id="vx-panel">
+      <div class="vx-panel-inner" id="vx-panel-inner">
+        <!-- populated by hud.js dw -->
+      </div>
+      
+      <div class="vx-scrollbar" id="vx-scroll-panel">
+        <div class="vx-scrollbar-thumb"></div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="tabs.js"></script>
+  <script src="hud.js"></script>
+</body>
+</html>

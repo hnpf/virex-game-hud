@@ -10,11 +10,11 @@ built for injected overlays and standalone game ui. standard two-panel layout, d
 
 - [ x ] material 3 expressive design language (m3 dark)
 - [ x ] two-panel layout: nav sidebar + scrollable content
-- [ / ] hugging corner style sidebar (sharp inner, rounded outer)
 - [ x ] expressive component rounding (first/last child logic)
+- [ x ] zero-dependency logic (no frameworks, just raw speed)
 - [ x ] optical centering & fluid morphing animations
 - [ / ] dynamic accent color theming via css custom properties
-- [ x ] zero-dependency logic (no frameworks, just raw speed)
+- [ / ] hugging corner style sidebar (sharp inner, rounded outer)
 
 ---
 

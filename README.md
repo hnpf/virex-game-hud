@@ -20,7 +20,7 @@ built for injected overlays and standalone game ui. standard two-panel layout, d
 
 ## usage
 
-everything is self-contained. link the styles and scripts in your entry point (and obviously link everything together first.).
+everything is self-contained. link the styles and scripts in your entry point (and obviously link everything together first.)
 
 ```html
 <link rel="stylesheet" href="hud.css">

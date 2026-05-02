@@ -6,15 +6,15 @@ built for injected overlays and standalone game ui. standard two-panel layout, d
 ---
 ![preview](github/demo/gameud.png)
 ---
-## concept features
+## planned features
 
-- material 3 expressive design language (m3 dark)
-- two-panel layout: nav sidebar + scrollable content
-- hugging corner style sidebar (sharp inner, rounded outer)
-- expressive component rounding (first/last child logic)
-- optical centering & fluid morphing animations
-- dynamic accent color theming via css custom properties
-- zero-dependency logic (no frameworks, just raw speed)
+- [ x ] material 3 expressive design language (m3 dark)
+- [ x ] two-panel layout: nav sidebar + scrollable content
+- [ / ] hugging corner style sidebar (sharp inner, rounded outer)
+- [ x ] expressive component rounding (first/last child logic)
+- [ x ] optical centering & fluid morphing animations
+- [ / ] dynamic accent color theming via css custom properties
+- [ x ] zero-dependency logic (no frameworks, just raw speed)
 
 ---
 

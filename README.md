@@ -1,78 +1,68 @@
 # virex-game-hud
 
- a material 3 expressive game overlay ui framework, and totally not a cheat ui. tailwind css, html, js. 
- built for injected overlays and standalone game ui. comes with a two-panel layout, dynamic theming, and a full set of controls out of the box.
-
----
-
-## preview/s
-
-> indev, will come later!
+an expressive material 3 game overlay ui framework. tailwind css, vanilla html, vanilla js. 
+built for injected overlays and standalone game ui. standard two-panel layout, dynamic theming, and decent fluid animations.
 
 ---
 
 ## concept features
 
-- material expressive design language (m3, dark)
+- material 3 expressive design language (m3 dark)
 - two-panel layout: nav sidebar + scrollable content
 - hugging corner style sidebar (sharp inner, rounded outer)
-- component set: toggles, sliders, dropdowns, keybind inputs, number fields
-- section titles and grouping with first/last border radius logic
+- expressive component rounding (first/last child logic)
+- optical centering & fluid morphing animations
 - dynamic accent color theming via css custom properties
-- scrollbar styled to match
-- tailwind for layout and spacing, css vars for theming
-- zero dependencies beyond tailwind cdn
+- zero-dependency logic (no frameworks, just raw speed)
 
 ---
 
 ## usage
 
-inject it as an overlay. everything is self-contained.
+everything is self-contained. link the styles and scripts in your entry point.
 
 ```html
-<link rel="stylesheet" href="hudstyling.css">
+<link rel="stylesheet" href="hud.css">
+<script src="tabs.js"></script>
 <script src="hud.js"></script>
 ```
 
-then populate your nav tabs and content panels in `hud.js`. see `config.example.js` for structure.
+populate your nav tabs in `tabs.js` and render your content via the panel map in `hud.js`.
 
 ---
 
 ## controls
 
-| component | description |
-|-----------|-------------|
-| `Toggle` | on/off boolean kinda thing. |
-| `Slider` | float range with min/max/step. |
-| `Dropdown` | single select from list. |
-| `Keybind` | records a key press. |
-| `NumberInput` | integer/float with +/- buttons. |
+| component | status | description |
+|-----------|--------|-------------|
+| `Switch` | x | material 3 toggle with checkmark icon. |
+| `Slider` | x | range input with fluid animation and value tooltip. |
+| `Split Button` | x | dual-action button with morphing dropdown menu. |
+| `Text` | x | simple labeled information display. |
+| `Keybind` | ? | *planned* - records a key press. |
+| `NumberInput` | ? | *planned* - numeric input with increment buttons. |
 
 ---
 
 ## theming
 
-all colors are css custom properties on `:root`. it is planned that you can swap them however you want.
+all colors are css custom properties on `:root`. change them at runtime to swap accent colors or themes.
 
-nav tabs are hot-swappable at runtime via js. see `tabs.js`.
+```css
+--vx-accent: #D0BCFF; /* main branding color */
+--vx-surface: #1C1B1F; /* panel background */
+```
 
 ---
 
-## planned / concepted structure
+## structure
 
 ```
 virex-game-hud/
-├── index.html
-├── hud.css
-├── hud.js
-├── tabs.js
-├── controls/
-│   ├── toggle.js
-│   ├── slider.js
-│   ├── dropdown.js
-│   ├── keybind.js
-│   └── number-input.js
-└── config.example.js
+├── index.html   # layout root
+├── hud.css      # core styles & m3 tokens
+├── hud.js       # component logic & panel rendering
+└── tabs.js      # sidebar navigation registry
 ```
 
 ---
